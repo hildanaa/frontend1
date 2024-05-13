@@ -1,0 +1,30 @@
+.grid_section {
+    display: grid;
+    margin: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+
+@media (max-width: 37.5em) {
+    .grid_section {
+        grid-gap: .5rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
+    }
+
+    .product__card {
+        transform: scale(0.9);
+        width: 14rem;
+    }
+}
+
+@media (max-width: 56.25em) {
+    .grid_section {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
+    }
+
+    .product__card {
+        transform: scale(0.8);
+        width: 14rem;
+    }
+}
