@@ -11,10 +11,15 @@ function HomeScreen() {
                     </div>
                     <div className="col-lg-6">
                         <h1 className="display-5 fw-bold lh-1 mb-3">East China University of Science and Technology</h1>
-                        <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <p className="lead">Access some of the school's top courses taught by our top instructors.</p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                            <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button>
+                         
+                         <a href="https://www.ecust.edu.cn/en/main.psp">
+                            <button type="button" id= "mybutton" className="btn btn-primary btn-lg px-4 me-md-2">Learn more</button>
+                            </a>
+                          
+                            
+                            {/* <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button> */}
                         </div>
                     </div>
                 </div>

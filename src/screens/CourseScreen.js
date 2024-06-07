@@ -139,29 +139,39 @@ const CourseScreen = () => {
 
                         <QuizQuestion questions={[
                             {
-                                question: 'What is the capital of France?',
-                                options: ['Paris', 'London', 'Berlin', 'Rome'],
-                                correctAnswer: 'Paris',
+                                question: 'Which of the following is NOT a characteristic of a relational database management system (RDBMS)?',
+                                options: [' Data is stored in tables','Tables can have relationships defined between them',
+                 
+                             "Data is stored in a hierarchical structure",
+                                " Structured Query Language (SQL) is used to manipulate data"],
+                                correctAnswer: 'Data is stored in a hierarchical structure',
                             },
                             {
-                                question: 'Which planet is known as the Red Planet?',
-                                options: ['Mars', 'Venus', 'Jupiter', 'Saturn'],
-                                correctAnswer: 'Mars',
+                                question: 'Which of the following is NOT a primary key constraint in a relational database?',
+                                options: [ "UNIQUE"
+                                    , "FOREIGN KEY"
+                                    , "NOT NULL"
+                                    , "AUTO_INCREMENT"],
+                                correctAnswer: "FOREIGN KEY",
                             },
                             {
-                                question: 'Who painted the Mona Lisa?',
-                                options: ['Leonardo da Vinci', 'Pablo Picasso', 'Vincent van Gogh', 'Michelangelo'],
-                                correctAnswer: 'Leonardo da Vinci',
+                                question: 'In a relational database, which SQL command is used to retrieve data from a table?',
+                                options: [ 'INSERT','UPDATE','SELECT','DELETE']
+                                ,
+                                correctAnswer: 'SELECT',
                             },
                             {
-                                question: 'What is the tallest mountain in the world?',
-                                options: ['Mount Everest', 'K2', 'Kangchenjunga', 'Makalu'],
-                                correctAnswer: 'Mount Everest',
+                                question: 'Which of the following is used to ensure data integrity in a relational database?',
+                                options: ['Foreign keys', 'Primary keys', 'indexes', 'Triggers'],
+                                correctAnswer: 'Triggers',
                             },
                             {
-                                question: 'Which animal is known as the "King of the Jungle"?',
-                                options: ['Lion', 'Tiger', 'Leopard', 'Cheetah'],
-                                correctAnswer: 'Lion',
+                                question: 'Which of the following best describes a database transaction?',
+                                options: ['A single operation that retrieves data from a database',
+                                     'A set of operations that are executed as a single unit',
+                                     'A process of optimizing database performance',
+                                     'A way to encrypt sensitive data stored in a database'],
+                                correctAnswer: 'A way to encrypt sensitive data stored in a database',
                             },
                         ]} />
                     </div>

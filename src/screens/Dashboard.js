@@ -24,7 +24,7 @@ const Dashboard = ({ history }) => {
   const { loading, error, courses } = courseList
 
   return (
-    <div className='container'>    
+    <div className='container my-2'>    
       <div className='card card-body'>
         <h4>Hello {user.name},</h4>
         <p>Welcome back</p>
@@ -46,7 +46,7 @@ const Dashboard = ({ history }) => {
       {loading ===false && courses?.length > 0 && (
         <>
           {courses.map((course) => (
-            <LinkContainer to={`/courses/${course.course_id}`} key={course.course_id}>          
+            <LinkContainer to={`/courses/${course.course_id}`} key={course.course_id} style={{'background-color': '#0d63a5', 'color': 'white'}}>          
               <div className='card card-body my-2'>
                 <h6>{course.title}</h6>
               <p>{course.description}</p>

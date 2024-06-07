@@ -72,16 +72,7 @@ function LoginScreen({ history, location }) {
           />
         </div>
         <button className='btn btn-dark my-2'>Sign In</button>
-        <div className='row py-3'>
-          <div className='col'>
-            Create new account.{' '}
-            <Link
-              to={redirect ? `/register?redirect=${redirect}` : '/register'}
-            >
-              Register
-            </Link>
-          </div>
-        </div>
+        
       </form>
     </FormContainer>
    </div>
